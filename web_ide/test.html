@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Web IDE: Python</title>
+		<link rel="stylesheet" href="./node_modules/codemirror/theme/night.css" id="theme">
+		<link rel="stylesheet" href="./node_modules/codemirror/addon/display/fullscreen.css">
+		<link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css">
+		<script src="./node_modules/codemirror/lib/codemirror.js"></script>
+		<script src="./node_modules/codemirror/mode/python/python.js"></script>
+		<script src="./node_modules/codemirror/addon/display/fullscreen.js"></script>
+		<script src="./node_modules/codemirror/addon/edit/trailingspace.js"></script>
+		<script src="./node_modules/codemirror/addon/edit/matchbrackets.js"></script>
+		<script src="./node_modules/codemirror/addon/edit/continuelist.js"></script>
+		<script src="./node_modules/codemirror/addon/edit/closetag.js"></script>
+		<script src="./node_modules/codemirror/addon/edit/matchtags.js"></script>
+		<script src="./node_modules/codemirror/addon/edit/closebrackets.js"></script>
+	</head>
+	
+	<body>
+
+	<form>
+	<textarea id="code" name="code" rows="5" style="display: none;">
+	
+#Wherever you are that's where you're at.
+import os
+print os.getcwd()
+
+class Test():
+	def __init__(self):
+		self.x = 100
+	def do_something(self):
+		print(self.x)
+	
+	</textarea>
+	</form>
+	
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+			lineNumbers: true,
+			theme: "night",
+			extraKeys: {
+				"F11": function(cm) {
+					cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+				},
+				"Esc": function(cm) {
+					if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+				}
+			}
+		});
+		
+		function changeTheme(cssFile, cssLinkIndex) {
+			var oldLink = document.getElementById("theme")
+			var newLink = document.createElement("link");
+			newLink.setAttribute("rel", "stylesheet");
+			newLink.setAttribute("type", "text/css");
+			newLink.setAttribute("href", cssFile);
+			newLink.setAttribute("id", "theme");
+			
+			document.getElementByTagName("head").item(0)
+		}
+		
+	</script>
+	
+	</body>
+	
+	
+	
+</html>

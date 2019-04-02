@@ -1,0 +1,11 @@
+sudo apt install python3
+sudo apt install python3-pip
+sudo apt install python3-venv
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+sudo apt install libev-dev libevdev2
+
+pip install bjoern #Still fails to build the wheel but installs anyway

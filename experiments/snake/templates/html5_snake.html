@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake</title>
+    </head>
+    <body>
+        <div id='main_div' style="position:relative; width: 100%; height: 100%">
+            <canvas id='grid_canvas' style="
+                z-index: 1; 
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
+                display: inline-block"  
+                tabindex="1">
+            </canvas>
+            <script src="./js/snake.js"></script>
+            <script>
+                var cxt = document.getElementById('grid_canvas').getContext('2d');
+                var grid = new SnakeGrid(cxt);
+                grid.height = 500;
+                grid.width = 500;
+                grid.update();
+                var canvas = document.getElementById('grid_canvas');
+                canvas.addEventListener('keydown', function(e) {grid.keydownHandler(e);}, false);
+                canvas.addEventListener('focus', grid.start(), false);
+            </script>
+        </div>
+    </body>
+</html>

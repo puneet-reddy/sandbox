@@ -1,23 +1,21 @@
-#!/usr/bin/env python
-
-'''
-All configuration goes here
-'''
-
 import os
+from dotenv import load_dotenv
+
 basedir = os.path.abspath(os.path.dirname(__file__))
-sqlitedb = 'sqlite:///' + os.path.join(basedir, 'app.db')
+load_dotenv(os.path.join(basedir, '.env'))
 
 
 class Config(object):
-    '''Configuration base class'''
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'somethingsecret'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', default=sqlitedb)
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+        'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
-    MAIL_PORT = int(os.environ.get('MAIL_PORT', default=25))
-    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', default=None)
+    MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
+    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['puneet.reddy@gmail.com']
-    POSTS_PER_PAGE = 3
+    ADMINS = ['your-email@example.com']
+    LANGUAGES = ['en', 'es']
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    POSTS_PER_PAGE = 25

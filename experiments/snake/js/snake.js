@@ -88,8 +88,8 @@ function SnakeGrid(cxt) {
 
     var spawnFood = function () {
         while (true) {
-            var xLocation = Math.floor(Math.random() * self.cells[0].length - 1);
-            var yLocation = Math.floor(Math.random() * self.cells.length - 1);
+            var xLocation = Math.floor(Math.random() * self.cells[0].length - 1) + 1;
+            var yLocation = Math.floor(Math.random() * self.cells.length - 1) + 1;
             if (self.cells[xLocation][yLocation] !== 1) {                
                 fillCell([xLocation, yLocation], '#00FFFF');
                 self.cells[xLocation][yLocation] = 2;

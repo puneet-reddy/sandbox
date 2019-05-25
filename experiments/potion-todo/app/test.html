@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Test using Ajax</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $.ajax({
+                    url: 'http://127.0.0.1:5000/todo/todos',
+                    type: 'GET',
+                    headers: {"Authorization": "Basic apiuser001:apiuser001"}
+                }).done(function(data){
+                    $("#response").html(data);
+                }).fail(function(xhr){
+                    console.log(xhr);
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="response"></div>
+    </body>
+</html>

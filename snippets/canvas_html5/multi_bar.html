@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multi Bar Chart</title>
+    </head>
+    <body>
+        <canvas id="canvas1"></canvas>
+        <script src="multi_bar.js"></script>
+        <script>
+            var data = [
+                [1500, 2200, 1345, 400],
+                [1200, 1400, 2345, 1400],
+                [1000, 3200, 1045, 4100]
+            ];
+            var cxt = document.getElementById("canvas1").getContext("2d");
+            var graph = new MultiBar(cxt);
+            graph.margins = 2;
+            graph.barWidth = 5;
+            graph.barAlignment = "left";
+            graph.barColors = ['#000000', '#1C3C5A', '#0D34C6', '#59A9E9'];
+            graph.width = 250;
+            graph.height = 200;
+            graph.xAxisLabels = ['Sep', 'Oct', 'Nov'];
+            graph.legends = ['0-15', '15-30', '30-60', '60-120'];
+            graph.xLegend = "Month";
+            graph.yLegend = "Visitors";
+            graph.label = "Average Dwell Time for the Month";
+            graph.update(data);
+        </script>
+    </body>
+</html>

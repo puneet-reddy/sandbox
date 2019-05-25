@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bar Chart Test</title>
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+    <script type="module" src="./utils.js"></script>
+    <script src="bar_chart.js"></script>
+    <script>
+        var cxt = document.getElementById("canvas1").getContext("2d");
+        var graph = new BarChart(cxt);
+        graph.width = 250;
+        graph.height = 150;
+        graph.xAxisLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        graph.xLegend = "Weekdays";
+        graph.yLegend = "Visitors";
+        graph.update([1000, 200, 3000, 6500, 2000, 500, 2000]);
+    </script>
+</body>

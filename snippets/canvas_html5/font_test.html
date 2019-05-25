@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Font test
+        </title>
+        <body>
+            <canvas id='canvas1'></canvas>
+            <canvas id='canvas2'></canvas>
+            <script src="font_test.js"></script>
+            <script>
+                var cxt = document.getElementById('canvas1').getContext('2d');
+                var testBox = new FontSizeTest(cxt);
+                testBox.width = 100;
+                testBox.height = 100;
+                testBox.font = '12px Futura';
+                testBox.update('This is a test');
+                var cxt2 = document.getElementById('canvas2').getContext('2d');
+                var textBox2 = new FontSizeTest(cxt2);
+                textBox2.width = 100;
+                textBox2.height = 100;
+                textBox2.font = '12px Futura Bk-Bt';
+                textBox2.update('This is a test');
+            </script>
+        </body>
+    </head>
+</html>

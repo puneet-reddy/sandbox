@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canvas test</title>
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+    <script src="line_graph.js"></script>
+    <script>
+        var cxt = document.getElementById("canvas1").getContext("2d");
+        var graph = new LineGraph(cxt);
+        graph.width = 450;
+        graph.height = 350;
+        graph.xArr = [300, 500, 300, 400, 400, 1200, 200];
+        graph.xLabels = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+        graph.update();
+    </script>
+</body>
+
+</html>

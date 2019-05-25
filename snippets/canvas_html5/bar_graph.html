@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canvas test</title>
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+    <script src="bar_graph.js"></script>
+    <script>
+        var cxt = document.getElementById("canvas1").getContext("2d");
+        var graph = new BarGraph(cxt);
+        graph.margin = 2;
+        graph.width = 450;
+        graph.height = 150;
+        graph.xAxisLabelArr = ["Sun", "Mon", "Tue", "wed", "Thu", "Fri", "Sat"];
+        graph.update([3, 5, 3, 4, 4, 12, 2]);
+        graph.animate();
+    </script>
+</body>
+
+</html>

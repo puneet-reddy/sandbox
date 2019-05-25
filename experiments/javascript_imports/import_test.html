@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ES5 import test</title>
+    </head>
+    <body>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+        <script src="testModule.js"></script>
+        <script src="testImport.js"></script>
+        <script>
+            require(['testModule'], function (testModule) {
+                testModule.y();
+            });
+        </script>
+    </body>
+</html>

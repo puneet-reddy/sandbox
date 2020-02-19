@@ -1,0 +1,1 @@
+# Basic folder structure for a flask app

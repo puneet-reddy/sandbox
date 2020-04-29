@@ -30,16 +30,16 @@
 <script>
 // TODO: Move the data below into an API call somewhere.
 export default {
-  name: "Accordion",
-  data() {
+  name: 'Accordion',
+  data () {
     return {
       posts: [
         {
-          ID: "1",
+          ID: '1',
           logo_url:
-            "https://www.csscorp.com/wp-content/uploads/2017/03/logo-1-5.png",
-          link_to: "https://www.csscorp.com/",
-          title: "CSS Corp. (May 2017 - Present)",
+            'https://www.csscorp.com/wp-content/uploads/2017/03/logo-1-5.png',
+          link_to: 'https://www.csscorp.com/',
+          title: 'CSS Corp. (May 2017 - Present)',
           text: [
             `CSS Corp started out as a customer support and call center operation. 
             In recent years (2015 onwards) they have branched out into the digital
@@ -79,35 +79,47 @@ export default {
             was only trained in Java and PHP. Looking around the organization, they
             found that I had the requried expertise in Flask & Django and web 
             development in general. I was promptly conscripted for the job.`,
-            `This unexpectedly turned out to be quite a challenge.`
+            'This unexpectedly turned out to be quite a challenge.'
           ]
         },
         {
-          ID: "2",
+          ID: '2',
           logo_url:
-            "https://uploads-ssl.webflow.com/5cf9058299b2c44049b064b4/5cf907c58e7d8a6315dfeb86_3LOQ.png",
-          link_to: "https://www.3loq.com/",
-          title: "3LOQ (Nov 2014 - Apr 2017)",
+            'https://uploads-ssl.webflow.com/5cf9058299b2c44049b064b4/5cf907c58e7d8a6315dfeb86_3LOQ.png',
+          link_to: 'https://www.3loq.com/',
+          title: '3LOQ (Nov 2014 - Apr 2017)',
           text: [
-            `Coming soon!.`,
-            `Watch this space.`,
-            `There will be an interesting story here soon\u2122.`
+            `
+            Coming soon!.
+            `,
+            `
+            Watch this space.
+            `,
+            `
+            There will be an interesting story here soon\u2122.
+            `
           ]
         },
         {
-          ID: "3",
+          ID: '3',
           logo_url:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/New_Bloomberg_Logo.svg/330px-New_Bloomberg_Logo.svg.png",
-          link_to: "https://www.bloomberg.com/",
-          title: "Bloomberg LLP (Feb 2013 - Jul 2014)",
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/New_Bloomberg_Logo.svg/330px-New_Bloomberg_Logo.svg.png',
+          link_to: 'https://www.bloomberg.com/',
+          title: 'Bloomberg LLP (Feb 2013 - Jul 2014)',
           text: [
-            `Coming soon!.`,
-            `Watch this space.`,
-            `There will be an interesting story here soon\u2122.`
+            `
+            Coming soon!.
+            `,
+            `
+            Watch this space.
+            `,
+            `
+            There will be an interesting story here soon\u2122.
+            `
           ]
         }
       ]
-    };
+    }
   }
-};
+}
 </script>

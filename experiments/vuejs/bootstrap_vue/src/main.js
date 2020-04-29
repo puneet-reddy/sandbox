@@ -11,6 +11,23 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
 
+const NotFound = { template: '<p>Page not found</p>'}
+const Home = {template: '<p>Home page goes here</p>'}
+
+const routes = {
+  '/': Home,
+  '/about': App
+}
+
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  data: {
+    currentRoute: window.location.pathname
+  },
+  computed: {
+    ViewComponent() {
+      return routes[this.currentRoute] || NotFound
+    }
+  },
+  render (h) {return h(this.ViewComponent)}
+})

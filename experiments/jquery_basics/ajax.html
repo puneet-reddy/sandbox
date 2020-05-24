@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery basics - ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: lightgray;
+            line-height: 1.5em;
+        }
+
+        header {
+            background: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000000 solid;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #box {
+            background: #333333;
+            color: #ffffff;
+            width: 500px;
+            height: 90px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #box2 {
+            background: red;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jquery basics - AJAX</h1>
+    </header>
+    <div id="container">
+        <div id="result"></div>
+        <ul id="users"></ul>
+    </div>
+    <script>
+        $(document).ready(() => {
+            // $('#result').load('index.html', (responseTxt, statusTxt, xhr) => {
+            //     if (statusTxt == 'success') {
+            //         alert("it went fine")
+            //     } else if (statusTxt == 'error') {
+            //         alert("There was an error: " + xhr.statusText);
+            //     }
+            // })
+
+            // $.get('index.html', (data) => {
+            //     $('#result').html(data);
+            // })
+
+            // // This file doesn't exist. Don't exepect this to work.
+            // $.getJSON('users.json', function(data) {
+            //     $.each(data, function(user) {
+            //         $('ul#users').append('<li>'+user.firstName+'</li>');
+            //     })
+            // })
+
+            $.ajax({
+                method: 'GET',
+                url: 'https://jsonplaceholder.typicode.com/posts',
+                dataType: 'json'
+            }).done(function(data) {
+                console.log(data);
+                $.map(data, function(post, i){
+                    $('#result').append('<h3>'+post.title+'</h3><p>'+post.body+'</p>')
+                })
+            })
+        });
+    </script>
+</body>
+</html>

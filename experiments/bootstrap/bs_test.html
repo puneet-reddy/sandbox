@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap4 Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="jumbotron pb-1 pt-1 sticky-top">
+        <p>This page attempts to go through the entire <strong>Bootstrap4</strong> documentation and provide code
+            examples for <strong>every component</strong> on there.</p>
+    </div>
+    <div class="container jumbotron">
+        <h3 class="card-header">Alerts:</h3>
+        <ul>
+            <li>
+                <div class="alert">Alert of class alert</div>
+            </li>
+            <li>
+                <div class="alert alert-primary">Alert of class alert & alert-primary</div>
+            </li>
+            <li>
+                <div class="alert alert-secondary">Alert of class alert & alert-secondary</div>
+            </li>
+            <li>
+                <div class="alert alert-success">Alert of class alert & alert-success</div>
+            </li>
+            <li>
+                <div class="alert alert-danger">Alert of class alert & alert-danger</div>
+            </li>
+            <li>
+                <div class="alert alert-warning">Alert of class alert & alert-warning</div>
+            </li>
+            <li>
+                <div class="alert alert-info">Alert of class alert & alert-info</div>
+            </li>
+            <li>
+                <div class="alert alert-light">Alert of class alert & alert-light</div>
+            </li>
+            <li>
+                <div class="alert alert-dark">Alert of class alert & alert-dark</div>
+            </li>
+        </ul>
+    </div>
+    <div class="container jumbotron">
+        <h3 class="card-header">Alerts with only the second class:</h3>
+        <ul>
+            <li>
+                <div class="alert-primary">Alert of class alert-primary</div>
+            </li>
+            <li>
+                <div class="alert-secondary">Alert of class alert-secondary</div>
+            </li>
+            <li>
+                <div class="alert-success">Alert of class alert-success</div>
+            </li>
+            <li>
+                <div class="alert-danger">Alert of class alert-danger</div>
+            </li>
+            <li>
+                <div class="alert-warning">Alert of class alert-warning</div>
+            </li>
+            <li>
+                <div class="alert-info">Alert of class alert-info</div>
+            </li>
+            <li>
+                <div class="alert-light">Alert of class alert-light</div>
+            </li>
+            <li>
+                <div class="alert-dark">Alert of class alert-dark</div>
+            </li>
+        </ul>
+    </div>
+    <div class="container jumbotron">
+        <h3 class="card-header">Alert-links:</h3>
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            A simple secondary alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-success" role="alert">
+            A simple success alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            A simple warning alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-info" role="alert">
+            A simple info alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-light" role="alert">
+            A simple light alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+        <div class="alert alert-dark" role="alert">
+            A simple dark alert with <a href="#" class="alert-link">an example link</a>.
+        </div>
+    </div>
+
+    <div class="container jumbotron">
+        <div class="alert alert-info" role="alert">
+            <h3 class="alert-heading">Alert-heading</h3>
+            <p>Alerts can contain headings, paragraphs, horizonal lines etc. If the text in the alert is too long,
+                bootstrap makes it wrap automatically.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy. This
+                line for example uses the mb-0 class to zero out the bottom margin of the "&ltp&gt" tag</p>
+        </div>
+    </div>
+
+    <div class="container jumbotron" id="dismissible_alerts">
+        <h3 class="card-header">Dismissible alerts:</h3>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <p>The alert-dismissible class along with the data-dismiss and role properties allows an alert to be closed.
+            </p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <p>Adding the fade and show classes makes it look a bit nicer when it vanishes.</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <button type="button" class="btn btn-primary float-right" id="refresh_alert">Refresh</button>
+    </div>
+    <div class="container jumbotron">
+        <h3 class="card-header">Using <span class="badge badge-primary">Badges</span></h3>
+        <button class="btn btn-primary">As part of a button <span class="badge badge-light">4</span></button>
+        <p>A good habbit is to use sr-only classes in conjunction with badges to help screen readers make sense</p>
+        <h5>Types of badges:</h5>
+        <ul class="nav">
+            <li><span class="badge badge-primary">Primary</span></li>
+            <li><span class="badge badge-secondary">Secondary</span></li>
+            <li><span class="badge badge-success">Success</span></li>
+            <li><span class="badge badge-danger">Danger</span></li>
+            <li><span class="badge badge-warning">Warning</span></li>
+            <li><span class="badge badge-info">Info</span></li>
+            <li><span class="badge badge-light">Light</span></li>
+            <li><span class="badge badge-dark">Dark</span></li>
+        </ul>
+        <div class="row ml-1 mt-2">
+            <h5 class="mr-2">Pill badges:</h5>
+            <p>Just need to add the 'pill-badge' class</p>
+
+            <ul class="nav">
+                <li><span class="badge badge-pill badge-primary">Primary</span></li>
+                <li><span class="badge badge-pill badge-secondary">Secondary</span></li>
+                <li><span class="badge badge-pill badge-success">Success</span></li>
+                <li><span class="badge badge-pill badge-danger">Danger</span></li>
+                <li><span class="badge badge-pill badge-warning">Warning</span></li>
+                <li><span class="badge badge-pill badge-info">Info</span></li>
+                <li><span class="badge badge-pill badge-light">Light</span></li>
+                <li><span class="badge badge-pill badge-dark">Dark</span></li>
+            </ul>
+        </div>
+        <div class="row ml-1">
+            <h5 class="mr-2">Link badges:</h5>
+            <p>Adding a badge to an anchor tag gives hover and focus for free!</p>
+
+            <ul class="nav">
+                <li><a href="#" class="badge badge-primary">Primary</a></li>
+                <li><a href="#" class="badge badge-secondary">Secondary</a></li>
+                <li><a href="#" class="badge badge-success">Success</a></li>
+                <li><a href="#" class="badge badge-danger">Danger</a></li>
+                <li><a href="#" class="badge badge-warning">Warning</a></li>
+                <li><a href="#" class="badge badge-info">Info</a></li>
+                <li><a href="#" class="badge badge-light">Light</a></li>
+                <li><a href="#" class="badge badge-dark">Dark</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container jumbotron">
+        <h3 class="card-header">Breadcrumbs</h3>
+        <p>Used with lists to give a navigation menu like below:</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="jumbotron container">
+        <h3 class="card-header">Buttons</h3>
+        <div class="row-sm">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <br>
+        <p>btn class can be used with links and inputs in addition to buttons</p>
+        <div class="row-sm">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+        <br>
+        <p>Adding a .btn-outline-* class gives:</p>
+        <div class="row-sm">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+        <br>
+        <p>Large and small buttons with .btn-lg and .btn-sm</p>
+        <div class="row-sm">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+        </div>
+        <br>
+        <p>Block level buttons with .btn-block</p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        </div>
+        <br>
+        <p>Button which can be toggled to on or off.</p>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            Single toggle
+        </button>
+        <br>
+        <p>A checkbox or label can also be styled as a button</p>
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="checkbox" checked> I'm Actually a checkbox label
+            </label>
+        </div>
+        <br>
+        <p>Radio buttons can also be styled as a buttons</p>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" checked> Active
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Radio
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Radio
+            </label>
+        </div>
+    </div>
+    <div class="container jumbotron">
+        <h3 class="card-header">Button Group</h3>
+        <p>Buttons can be grouped to act like a radio checkbox using btn-group on the container</p>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+        <br>
+        <p>Button toolbars btn-toolbar can be used to group multiple btn-group elements</p>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">5</button>
+                <button type="button" class="btn btn-secondary">6</button>
+                <button type="button" class="btn btn-secondary">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-secondary">8</button>
+            </div>
+        </div>
+        <br>
+        <p>Button groups and input groups can be combined in a toolbar.</p>
+        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Input group example"
+                    aria-label="Input group example" aria-describedby="btnGroupAddon">
+            </div>
+        </div>
+        <br>
+        <p>The entire group can be sized by using btn-group-lg or btn-group-sm classes in addition to btn-group</p>
+        <div class="row-sm">
+            <div class="btn-group btn-group-lg mr-3" role="group" aria-label="...">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+            <div class="btn-group mr-3" role="group" aria-label="...">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+        </div>
+        <br>
+        <p>Nesting btn-group elements creates dropdowns</p>
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>A vertical btn-group can be created using btn-group-vertical</p>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-secondary">Top</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Bottom</button>
+        </div>
+    </div>
+    <!-- Bootstrap needs javascript for some of it's functionality -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $('#refresh_alert').on('click', () => {
+                $('#dismissible_alerts').append(
+                    `<div class="alert alert-warning alert-dismissible" role="alert">
+                    <p>The alert-dismissible class along with the data-dismiss and role properties allows an alert to be closed.
+                    </p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <p>Adding the fade and show classes makes it look a bit nicer when it vanishes.</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            `
+                )
+            })
+        });
+    </script>
+</body>
+
+</html>

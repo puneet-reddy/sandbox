@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery basics - dom manipulation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: lightgray;
+            line-height: 1.5em;
+        }
+
+        header {
+            background: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000000 solid;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jquery basics - dom manipulation</h1>
+    </header>
+    <div id="container">
+        <button id="btn1">Button 1</button>
+        <p class="para1">This is a paragraph</p>
+        <p class="para2">This is another para</p>
+        <div id="myDiv"></div>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(() => {
+            // $('p.para1').css('color', 'red');
+            // $('#btn1').click(function () {
+            //     $('p.para2').toggleClass('myClass');
+            // })
+            // $('#myDiv').html('<h3>Hello world</h3>');
+            $('ul').prepend('<li>Prepend list item</li>')
+            $('ul').append('<li>Append list item</li>')
+            // empty and detach (to remove things from the dom)
+        });
+    </script>
+</body>
+
+</html>

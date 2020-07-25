@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards with Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="jumbotron pb-1 pt-1 sticky-top row">
+        <h4 class="mr-2">Card Settings:</h4>
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Text Alignment
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button class="dropdown-item" id="textNone">None</button>
+                    <button class="dropdown-item" id="textCenter">text-center</button>
+                    <button class="dropdown-item" id="textLeft">text-left</button>
+                    <button class="dropdown-item" id="textRight">text-right</button>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Width
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button class="dropdown-item" id="wNone">None</button>
+                    <button class="dropdown-item" id="w_100">w-100</button>
+                    <button class="dropdown-item" id="w_75">w-75</button>
+                    <button class="dropdown-item" id="w_50">w-50</button>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Overlay
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button class="dropdown-item" id="overlayOff">None</button>
+                    <button class="dropdown-item" id="overlayOn">card-img-overlay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container jumbotron">
+        <div class="card">
+            <img src="assets/blank.png" class="card-img-top" alt="blank grey image">
+            <div class="card-header">This is the card header in a div and a nav nav-tabs card-header-tabs group as well!
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="card-header">Card Header in a h3 element</h3>
+            <div id="overlay">
+                <div class="card-body">
+                    <h5 class="card-title">Card title in a h5</h5>
+                    <h6 class="card-subtitel">Card subtitle in a h6</h6>
+                    <div class="card-body">
+                        This is text inside the card body
+                    </div>
+                    <p class="card-text">This text is inside a paragraph element with the card-text class.</p>
+                    <a href="#" class="card-link mr-3">Card link</a>
+                    <a href="#" class="btn btn-primary">A primary button</a>
+                </div>
+            </div>
+            <h3 class="card-header mt-2">List Groups</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">This is a list group</li>
+                <li class="list-group-item">With list-group and list-group-flush defined on the ul</li>
+                <li class="list-group-item">And list-group-item on the li</li>
+            </ul>
+            <div class="card-footer">This is the card footer in a div</div>
+        </div>
+    </div>
+
+    <div class="container jumbotron">
+        <h3 class="card-header mb-3">Cards with different bg-* types in a card-group</h3>
+        <div class="card-group">
+            <div class="card text-white bg-primary mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-danger mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Danger card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-warning mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Warning card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-info mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Info card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card bg-light mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron container">
+        <h3 class="card-header mb-3">Cards with different border-* in a card-deck</h3>
+        <div class="card-deck">
+            <div class="card border-primary mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-secondary mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-success mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-danger mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-danger">
+                    <h5 class="card-title">Danger card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-warning mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-warning">
+                    <h5 class="card-title">Warning card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-info mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-info">
+                    <h5 class="card-title">Info card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-light mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card border-dark mb-3" style="min-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-dark">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron container">
+        <h3 class="card-heading mb-3">card-columns with mix and matched cards</h3>
+        <p class='text-info'>You're probably better off using css grid styling instead.</p>
+        <div class="card-columns">
+            <div class="card">
+                <img src="assets/blank.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <img src="assets/blank.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                    <footer class="blockquote-footer text-white">
+                        <small>
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <img src="assets/blank.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is another card with title and supporting text below. This card has some
+                        additional content to make it slightly taller overall.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap needs javascript for some of it's functionality -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(
+            $('#textCenter').on('click', () => {
+                $('.card').removeClass('text-left text-right')
+                $('.card').addClass('text-center')
+            }),
+            $('#textLeft').on('click', () => {
+                $('.card').removeClass('text-center text-right')
+                $('.card').addClass('text-left')
+            }),
+            $('#textRight').on('click', () => {
+                $('.card').removeClass('text-center text-left')
+                $('.card').addClass('text-right');
+            }),
+            $('#textNone').on('click', () => {
+                $('.card').removeClass('text-center text-left text-right')
+            }),
+            $('#w_100').on('click', () => {
+                $('.card').removeClass('w-75 w-50')
+                $('.card').addClass('w-100')
+            }),
+            $('#w_75').on('click', () => {
+                $('.card').removeClass('w-100 w-50')
+                $('.card').addClass('w-75')
+            }),
+            $('#w_50').on('click', () => {
+                $('.card').removeClass('w-100 w-75')
+                $('.card').addClass('w-50')
+            }),
+            $('#wNone').on('click', () => { $('.card').removeClass('w-100 w-75 w-50') }),
+            $('#overlayOff').on('click', () => { $('#overlay').removeClass('card-img-overlay') }),
+            $('#overlayOn').on('click', () => { $('#overlay').addClass('card-img-overlay') })
+        );
+    </script>
+</body>
+
+</html>

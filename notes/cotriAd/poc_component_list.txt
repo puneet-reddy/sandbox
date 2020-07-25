@@ -1,0 +1,5 @@
+cotriAd PoC Component List:
+1. Client side app (On device)
+2. Server side file handler 
+3. Server side scheduler
+4. Scheduler & File Upload Webapp (UI)

@@ -1,0 +1,16 @@
+Personal Stuff:
+- News feed where the user can customize by sentiment/ verbosity and other unusal measures
+	Could be a site
+	Could be an app
+	Could be a plugin for google news. (Is that even possible?)
+	Check out what RSS feeds I can use for this
+- Outlook sentiment analysis
+- Custom task list
+	Sub-tasks (infinite?)
+	Created, started and finished time.
+	Requestor & Doer
+	Sequence/ Blockers?
+	Priority
+- Randomized search. Search results based on different search engines. Unordered? Relevance?
+- Resumable uploads (Implement it in an API?)
+- Covid Mortality risk calculator (As suggested by Dr. Mukunda)

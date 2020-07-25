@@ -1,0 +1,13 @@
+You type in a URL or click on a link on a page which causes the browser to make a HTTP get request to that server. This may be a request to port 80 for HTTP or port 443 for HTTPS and is most often a get request but may also be a post or put request in case of a form submission.
+
+Preceding this request is the establishing of a connection. In most cases this connection would be a TLS connection over TCP which would involve a back and forth between the browser and the server in order to establish authentication. 
+
+Once the server receives the request, it is processed based on whatever internal logic is defined for that endpoint and a payload is returned containing html, css and javascript. This is also where any cookies may be exchanged with the browser. The browser on receipt of this payload attempts to parse the HTML while applying the relevant styling from the CSS and the logic from the javascript. There may also be references to external sources of assets such as CDNs or other APIs which the browser would need to call in order to get things like additional styles, fonts, icons and other media required for it to correctly render the site.
+
+There is often a need for browser to make several further requests to other API endpoints (which may be on different servers) in order for it to get all the data required to display the page. In the case of a micro-services based architecture, there may even be different APIs responsible for individual sections of the page.
+
+In addition to all the resources required to render the page, there is sometimes additional functionality added to the page which takes care of such things like tracking of browsing history, talking to advertising APIs in order to fetch and display ad content and remembering the preferences and settings configuration details of the user.
+
+There may also be socket connections established from the browser to the server in order to enable real time communication such as in the case of chat programs or real time analytics. Alternatively, the webpage loaded by the browser may have a mechanism to keep polling the server for new or changed data after a specific interval. 
+
+Subsequent navigation on the webpage may trigger incremental load of more data from the server (lazy loaded sections) or from other servers.

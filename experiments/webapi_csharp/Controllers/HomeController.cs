@@ -18,12 +18,15 @@ namespace webapi_csharp.Controllers {
             _logger = logger;
         }
 
-        [DisableFormValueModelBinding]
         public IActionResult Index () {
             var uploadPath = "C:\\Users\\css112720\\Desktop\\sandbox\\experiments\\webapi_csharp\\Data\\";
             IFileProvider physicalProvider = new PhysicalFileProvider(uploadPath);
             IndexModel iModel = new IndexModel(physicalProvider);
             return View (iModel);
+        }
+
+        public IActionResult StreamedSingleFileUploadPhysical() {
+            return View(new StreamedSingleFileUploadPhysicalModel());
         }
 
         public IActionResult Privacy () {

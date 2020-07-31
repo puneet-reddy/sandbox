@@ -147,3 +147,4 @@ C:\Users\css112720\Desktop\sandbox\experiments\webapi_csharp\obj\Debug\netcoreap
 C:\Users\css112720\Desktop\sandbox\experiments\webapi_csharp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\css112720\Desktop\sandbox\experiments\webapi_csharp\bin\Debug\netcoreapp3.1\App.config
 C:\Users\css112720\Desktop\sandbox\experiments\webapi_csharp\bin\Debug\netcoreapp3.1\webapi_csharp.dll.config
+C:\Users\css112720\Desktop\sandbox\experiments\webapi_csharp\obj\Debug\netcoreapp3.1\Razor\Views\Home\StreamedSingleFileUploadPhysical.cshtml.g.cs

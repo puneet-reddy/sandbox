@@ -1,0 +1,13 @@
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.csprojAssemblyReference.cache
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.AssemblyInfoInputs.cache
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.AssemblyInfo.cs
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.csproj.CoreCompileInputs.cache
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.exe
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.deps.json
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.runtimeconfig.json
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.runtimeconfig.dev.json
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.pdb
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.pdb
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.genruntimeconfig.cache

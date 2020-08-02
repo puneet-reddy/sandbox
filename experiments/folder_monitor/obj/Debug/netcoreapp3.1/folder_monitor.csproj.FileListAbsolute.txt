@@ -11,3 +11,16 @@ C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcorea
 C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.dll
 C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.pdb
 C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.genruntimeconfig.cache
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\folder_monitor.dll.config
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\css112720\Desktop\sandbox\experiments\folder_monitor\obj\Debug\netcoreapp3.1\folder_monitor.csproj.CopyComplete

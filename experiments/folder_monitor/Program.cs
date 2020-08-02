@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Configuration;
 
 namespace folder_monitor
 {
@@ -7,7 +8,7 @@ namespace folder_monitor
     {
         static void Main(string[] args)
         {
-            string watchPath = @"C:\Users\css112720\Desktop\sandbox\experiments\webapi_csharp";
+            string watchPath = ConfigurationManager.AppSettings["demoPath"];
             FileSystemWatcher watcher = new FileSystemWatcher(watchPath);
             watcher.EnableRaisingEvents = true;
             watcher.IncludeSubdirectories = true;

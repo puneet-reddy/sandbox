@@ -1,0 +1,5 @@
+2020-08-03 14:37:25.032 +05:30 [INF] Starting the service
+2020-08-03 14:37:29.088 +05:30 [INF] The website is up. Status code "OK"
+2020-08-03 14:37:34.269 +05:30 [INF] The website is up. Status code "OK"
+2020-08-03 14:37:39.472 +05:30 [INF] The website is up. Status code "OK"
+2020-08-03 14:37:39.822 +05:30 [INF] The service has been stopped...

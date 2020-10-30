@@ -9,9 +9,9 @@ dict1 = {
 list1 = [1, 2, 3]
 
 print(dict1)
-print(dict2)
+print(list1)
 
-output = open('save1.pkl', 'wb')
+output = open('save.pkl', 'wb')
 pickle.dump(dict1, output, pickle.HIGHEST_PROTOCOL)
 pickle.dump(list1, output, pickle.HIGHEST_PROTOCOL)
 

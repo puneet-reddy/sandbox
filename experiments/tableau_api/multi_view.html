@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Multiple Views</title>
+    <script type='text/javascript' src='https://aidashboard.arubanetworks.com/javascripts/api/viz_v1.js'></script>
+    <style>
+        * {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .tableauPlaceholder {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .tableauViz {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .selectors {
+            display: block;
+            width: 100%;
+            height: 5em;
+            min-height: 1.5em;
+            padding: .5em;
+            margin: 2em;
+        }
+
+        .selectors label {
+            margin-left: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="selectors">
+            <label for="one">5+ Minutes Cases</label><input type="checkbox" name="one" id="one" checked>
+            <label for="two">911 Delay Cases</label><input type="checkbox" name="two" id="two" checked>
+            <label for="three">Callback Cases</label><input type="checkbox" name="three" id="three" checked>
+        </div>
+        <div class='tableauPlaceholder one'>
+            <object class='tableauViz'>
+                <param name='host_url' value='https%3A%2F%2Faidashboard.arubanetworks.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='HygeineReports&#47;5Minutes' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='no' />
+                <param name='showAppBanner' value='false' />
+            </object>
+        </div>
+
+        <div class='tableauPlaceholder two'>
+            <object class='tableauViz'>
+                <param name='host_url' value='https%3A%2F%2Faidashboard.arubanetworks.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='HygeineReports&#47;911DelayCases' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='no' />
+                <param name='showAppBanner' value='false' />
+            </object>
+        </div>
+
+        <div class='tableauPlaceholder three'>
+            <object class='tableauViz'>
+                <param name='host_url' value='https%3A%2F%2Faidashboard.arubanetworks.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='HygeineReports&#47;CallbackCases' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='no' />
+                <param name='showAppBanner' value='false' />
+            </object>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        let toggle_one = function (e) {
+            let one = document.querySelector('.one');
+            if (one.style.display == 'none') {
+                one.style.display = 'block';
+            } else {
+                one.style.display = 'none';
+            }
+        }
+        let toggle_two = function (e) {
+            let two = document.querySelector('.two');
+            if (two.style.display == 'none') {
+                two.style.display = 'block';
+            } else {
+                two.style.display = 'none';
+            }
+        }
+        let toggle_three = function (e) {
+            let three = document.querySelector('.three');
+            if (three.style.display == 'none') {
+                three.style.display = 'block';
+            } else {
+                three.style.display = 'none';
+            }
+        }
+        check_one = document.querySelector('#one');
+        check_one.addEventListener('change', toggle_one);
+        check_two = document.querySelector('#two');
+        check_two.addEventListener('change', toggle_two);
+        check_three = document.querySelector('#three');
+        check_three.addEventListener('change', toggle_three);
+    </script>
+</body>
+
+</html>
